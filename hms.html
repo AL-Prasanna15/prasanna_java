@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Management System</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+}
+
+/* Navbar */
+
+nav{
+background:#333;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* Home Section */
+
+#home{
+height:500px;
+background-image:url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+background-size:cover;
+background-position:center;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+#home h1{
+font-size:50px;
+}
+
+/* Sections */
+
+section{
+padding:50px;
+text-align:center;
+}
+
+/* Rooms Layout */
+
+.rooms-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.room{
+border:1px solid #ccc;
+width:250px;
+padding:15px;
+background:white;
+}
+
+.room img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+/* Booking Form */
+
+form{
+width:300px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+input, select{
+margin:8px 0;
+padding:10px;
+}
+
+button{
+background:#333;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+<a href="#home">Home</a>
+<a href="#rooms">Rooms</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- Home -->
+
+<section id="home">
+<h1>Grand Hotel</h1>
+<p>Luxury Rooms & Best Services</p>
+</section>
+
+<!-- Rooms -->
+
+<section id="rooms">
+
+<h2>Our Rooms</h2>
+
+<div class="rooms-container">
+
+<div class="room">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<h3>Deluxe Room</h3>
+<p>Price: ₹2000 / night</p>
+</div>
+
+<div class="room">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+<h3>Suite Room</h3>
+<p>Price: ₹4000 / night</p>
+</div>
+
+<div class="room">
+<img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39">
+<h3>Luxury Room</h3>
+<p>Price: ₹6000 / night</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Booking -->
+
+<section id="booking">
+
+<h2>Room Booking</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<select>
+<option>Deluxe Room</option>
+<option>Suite Room</option>
+<option>Luxury Room</option>
+</select>
+
+<input type="date">
+<input type="date">
+
+<button>Book Now</button>
+
+</form>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+<p>Email: hotel@email.com</p>
+<p>Phone: 9876543210</p>
+
+</section>
+
+<footer>
+<p> 2026 Grand Hotel</p>
+</footer>
+
+</body>
+</html>
